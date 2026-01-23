@@ -1,6 +1,5 @@
 #include <iostream>
-
 int main()
 {
-  std::cout << "zhuravleva.elizaveta\n";
+  std::cout << "zhuravleva.elizaveta";
 }
