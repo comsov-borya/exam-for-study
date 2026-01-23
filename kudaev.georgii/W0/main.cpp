@@ -2,5 +2,5 @@
 
 int main()
 {
-  std::cout << "kudaev.georgii/n";
+  std::cout << "kudaev.georgii\n";
 }
