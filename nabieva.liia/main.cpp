@@ -1,7 +1,5 @@
 #include <iostream>
-
 int main()
 {
-	std::cout << "nabieva.liia\n";
-	return 0;
+  std::cout << "nabieva.liia\n";
 }
