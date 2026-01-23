@@ -2,5 +2,6 @@
 
 int main()
 {
-    cout << "kachura.arseniy" << "\n";
+    std::cout << "kachura.arseniy" << "\n";
+    return 0;
 }
