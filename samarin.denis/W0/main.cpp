@@ -1,5 +1,6 @@
+#include <iostream>
 
-
-main(){
-  return 0;
+int main()
+{
+  std::cout << "samarin.denis\n";
 }
