@@ -2,6 +2,6 @@
 
 int main()
 {
-  std::cout << "yalovsky.gleb";
+  std::cout << "yalovsky.gleb\n";
   return 0;
 }
