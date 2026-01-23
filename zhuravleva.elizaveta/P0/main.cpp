@@ -1,2 +1,6 @@
 #include <iostream>
-int main{}
+
+int main()
+{
+  std::cout << "zhuravleva.elizaveta\n";
+}
