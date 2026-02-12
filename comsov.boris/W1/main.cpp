@@ -82,4 +82,33 @@ int main(int argc, char** argv)
     }
     std::cout << "\n";
   }
+
+  else if (std::strcmp(argv[1], "minln") == 0) {
+    size_t minln = lengths[0];
+    for (size_t i = 0; i < cap; ++i) {
+      if (minln > lengths[i]) {
+        minln = lengths[i];
+      }
+    }
+    std::cout << minln << "\n";
+  }
+
+  else if (std::strcmp(argv[1], "minseq") == 0) {
+    size_t minln = lengths[0];
+    size_t ind = 0;
+    int *minarr = nullptr;
+    for (size_t i = 0; i < cap; ++i) {
+      if (minln > lengths[i]) {
+        minln = lengths[i];
+        minarr = arrs[i];
+        ind = i;
+      }
+    }
+    std::cout << minln;
+    for (size_t i = 0; i < lengths[ind]; ++i) {
+      std::cout << minarr[i];
+    }
+    std::cout << "\n";
+  }
+
 }
