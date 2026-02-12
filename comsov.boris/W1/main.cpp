@@ -44,6 +44,7 @@ int main(int argc, char** argv)
     lengths[s] = n;
     s++;
   }
+
   if (std::strcmp(argv[1], "size") == 0) {
     size_t totalSize = 0;
     for (size_t i = 0; i < cap; ++i) {
@@ -53,6 +54,7 @@ int main(int argc, char** argv)
     }
     std::cout << totalSize << "\n";
   }
+
   else if (std::strcmp(argv[1], "maxln") == 0) {
     size_t maxln = 0;
     for (size_t i = 0; i < cap; ++i) {
@@ -61,5 +63,23 @@ int main(int argc, char** argv)
       }
     }
     std::cout << maxln << "\n";
+  }
+
+  else if (std::strcmp(argv[1], "maxseq") == 0) {
+    size_t maxln = 0;
+    size_t ind = 0;
+    int *maxarr = nullptr;
+    for (size_t i = 0; i < cap; ++i) {
+      if (maxln < lengths[i]) {
+        maxln = lengths[i];
+        maxarr = arrs[i];
+        ind = i;
+      }
+    }
+    std::cout << maxln;
+    for (size_t i = 0; i < lengths[ind]; ++i) {
+      std::cout << maxarr[i];
+    }
+    std::cout << "\n";
   }
 }
