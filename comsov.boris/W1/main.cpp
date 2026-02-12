@@ -123,4 +123,16 @@ int main(int argc, char** argv)
     std::cout << negative << "\n";
   }
 
+  else if (std::strcmp(argv[1], "positive") == 0) {
+    size_t positive = 0;
+    for (size_t i = 0; i < cap; ++i) {
+      for (size_t j = 0; j < lengths[i]; ++j) {
+        if (arrs[i][j] > 0) {
+          positive++;
+        }
+      }
+    }
+    std::cout << positive << "\n";
+  }
+
 }
