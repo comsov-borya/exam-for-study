@@ -53,4 +53,13 @@ int main(int argc, char** argv)
     }
     std::cout << totalSize << "\n";
   }
+  else if (std::strcmp(argv[1], "maxln") == 0) {
+    size_t maxln = 0;
+    for (size_t i = 0; i < cap; ++i) {
+      if (maxln < lengths[i]) {
+        maxln = lengths[i];
+      }
+    }
+    std::cout << maxln << "\n";
+  }
 }
